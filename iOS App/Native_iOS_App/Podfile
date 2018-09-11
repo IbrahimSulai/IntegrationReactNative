@@ -1,0 +1,41 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Native_iOS_App' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+# Your 'node_modules' directory is probably in the root of your project,
+  		# but if not, adjust the `:path` accordingly
+  	pod 'React', :path => '../../React Native App/Bakesale/node_modules/react-native', :subspecs => [
+    			'Core',
+    'CxxBridge', # Include this for RN >= 0.47
+    'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+    'RCTText',
+    'RCTNetwork',
+    'RCTImage',
+    'RCTWebSocket', # Needed for debugging
+    # Add any other subspecs you want to use in your project
+]
+
+  # Explicitly include Yoga if you are using RN >= 0.42.0
+  pod 'yoga', :path => '../../React Native App/Bakesale/node_modules/react-native/ReactCommon/yoga'
+
+  # Third party deps podspec link
+  pod 'DoubleConversion', :podspec => '../../React Native App/Bakesale/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../../React Native App/Bakesale/node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../../React Native App/Bakesale/node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  # Pods for Native_iOS_App
+
+  target 'Native_iOS_AppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Native_iOS_AppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

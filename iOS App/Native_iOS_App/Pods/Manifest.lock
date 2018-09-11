@@ -1,0 +1,83 @@
+PODS:
+  - boost-for-react-native (1.63.0)
+  - DoubleConversion (1.1.5)
+  - Folly (2016.10.31.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - glog
+  - glog (0.3.4)
+  - React/Core (0.56.0):
+    - yoga (= 0.56.0.React)
+  - React/CxxBridge (0.56.0):
+    - Folly (= 2016.10.31.00)
+    - React/Core
+    - React/cxxreact
+  - React/cxxreact (0.56.0):
+    - boost-for-react-native (= 1.63.0)
+    - Folly (= 2016.10.31.00)
+    - React/jschelpers
+    - React/jsinspector
+  - React/DevSupport (0.56.0):
+    - React/Core
+    - React/RCTWebSocket
+  - React/fishhook (0.56.0)
+  - React/jschelpers (0.56.0):
+    - Folly (= 2016.10.31.00)
+    - React/PrivateDatabase
+  - React/jsinspector (0.56.0)
+  - React/PrivateDatabase (0.56.0)
+  - React/RCTBlob (0.56.0):
+    - React/Core
+  - React/RCTImage (0.56.0):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTNetwork (0.56.0):
+    - React/Core
+  - React/RCTText (0.56.0):
+    - React/Core
+  - React/RCTWebSocket (0.56.0):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
+  - yoga (0.56.0.React)
+
+DEPENDENCIES:
+  - DoubleConversion (from `../../React Native App/Bakesale/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - Folly (from `../../React Native App/Bakesale/node_modules/react-native/third-party-podspecs/Folly.podspec`)
+  - glog (from `../../React Native App/Bakesale/node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - React/Core (from `../../React Native App/Bakesale/node_modules/react-native`)
+  - React/CxxBridge (from `../../React Native App/Bakesale/node_modules/react-native`)
+  - React/DevSupport (from `../../React Native App/Bakesale/node_modules/react-native`)
+  - React/RCTImage (from `../../React Native App/Bakesale/node_modules/react-native`)
+  - React/RCTNetwork (from `../../React Native App/Bakesale/node_modules/react-native`)
+  - React/RCTText (from `../../React Native App/Bakesale/node_modules/react-native`)
+  - React/RCTWebSocket (from `../../React Native App/Bakesale/node_modules/react-native`)
+  - yoga (from `../../React Native App/Bakesale/node_modules/react-native/ReactCommon/yoga`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - boost-for-react-native
+
+EXTERNAL SOURCES:
+  DoubleConversion:
+    :podspec: "../../React Native App/Bakesale/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  Folly:
+    :podspec: "../../React Native App/Bakesale/node_modules/react-native/third-party-podspecs/Folly.podspec"
+  glog:
+    :podspec: "../../React Native App/Bakesale/node_modules/react-native/third-party-podspecs/glog.podspec"
+  React:
+    :path: "../../React Native App/Bakesale/node_modules/react-native"
+  yoga:
+    :path: "../../React Native App/Bakesale/node_modules/react-native/ReactCommon/yoga"
+
+SPEC CHECKSUMS:
+  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  DoubleConversion: a6ec5115d02a687c3a7350d6462b8c3e744bfa41
+  Folly: fa458a15230e6bee654f3e2b25f6be60f0b61bf3
+  glog: cffdcd539a4fed795bdf0146afde6dd4a981576c
+  React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
+  yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
+
+PODFILE CHECKSUM: e385cf0d97d0673f2a337af36dd510f9664bb3f7
+
+COCOAPODS: 1.6.0.beta.1
